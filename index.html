@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Entrega 14</title>
+</head>
+<body>
+    <h1>Añade las plantas al catálogo. </h1>
+    <h2 id="contador-plantas"></h2>
+    <p>Su nombre, precio, altura en cm y tipo (interior o exterior).</p>
+    <form action="submit" id="formulario-agregar-planta">
+        <input placeholder="Nombre" type="text"/>
+        <select>
+            <option value="Interior">Interior</option>
+            <option value="Exterior">Exterior</option>
+        </select>
+        <input placeholder="Altura" type="number"/>
+        <input placeholder="Precio" type="number"/>
+        <button>Guardar planta</button>
+    </form>
+    <div class="proveedores">
+    <a class="botonP" href="./proveedores.html">Proveedores</a>
+</div>
+    <section>
+        <div class="carta-planta" id="contenedor-plantas">
+           
+        </div>
+    </section>
+    <div id="toast"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./entrega14.js" type="text/javascript"></script>
+</body>
+</html>
